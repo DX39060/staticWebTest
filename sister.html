@@ -18,34 +18,34 @@
 
 </head>
 
-<body>
-
+<body id="mainBody">
 <div id="mainDiv">
 	<div id="content">
-		<div id="code">
+		<div id="code" style="color: #ea9c9c; ">
 			<span class="comments">/**</span><br />
 			<span class="space"/><span class="comments">*2021/5/1下午11:09:20,</span><br />
 			<span class="space" /><span class="comments" id="localDate"></span><br />
 			<span class="space"/><span class="comments">*/</span><br />
 
-			姐姐：	我通过了你的朋友验证请求，现在，我们可以开始聊天了<br />
+			也许我这一生都无法走进你的生命<br />
 			<span class="comments"></span><br />
-			我：	姐姐，养我！<br />
+			我却有为你守候一生的勇气<br />
 			<span class="comments"></span><br />
-			我：	我比猫咪可爱，而且超级可爱<br />
+			一直到沙漠日落<br />
 			<span class="comments"></span><br />
-			姐姐：	有多可爱？<br />
+			大海干涸<br />
 			<span class="comments"></span><br />
-			我：	姐姐有多可爱，我就比姐姐多可爱一份<br />
+			始终为爱执着<br />
 			<span class="comments"></span><br />
-			姐姐：	我不可爱<br />
+			也许我这一生都无法改变你的决定<br />
 			<span class="comments"></span><br />
-			我：	可爱！<br />
+			我却有为你祝福一生的勇气<br />
 			<span class="comments"></span><br />
-			姐姐：	我很凶的<br />
+			只要你能够坚信我的真心<br />
 			<span class="comments"></span><br />
-			我：	哈哈哈，那岂不是更可爱了！！<br />
-			<br>
+			至   死   不   渝<br />
+			<span class="comments"></span><br />
+
 			<br>
 			<!--
 				<span class="comments">/**</span><br />
@@ -82,13 +82,13 @@
 		<div id="loveHeart">
 			<canvas id="garden"></canvas>
 			<div id="words">
-				<div id="messages">
+				<div id="messages" style="color: #333333">
 					姐姐，这是我们认识的的的的的的。
 					<div id="elapseClock"></div>
 				</div>
-				<div id="loveu">
-					哈哈哈哈哈。<br/>
-					<div class="signature">- 可爱</div>
+				<div id="loveu" style="color: antiquewhite">
+					时间会记住你和我。。。。<br/>
+					<div class="signature">- 2021520</div>
 				</div>
 			</div>
 		</div>
@@ -140,6 +140,22 @@ if (!document.createElement('canvas').getContext) {
 	adjustCodePosition();
 	$("#code").typewriter();
 }
+
+$(document).ready(function () {
+	var i = 1;
+	setInterval(function () {
+		if (i == 1) {
+			i = 2;
+		} else if (i == 2) {
+			i = 3;
+		} else {
+			i = 1
+		}
+		$('#mainBody').css({
+			"background-image": "url(./css/" + i + ".jpg)"
+		});
+	}, 30000);
+});
 </script>
 
 </body>
